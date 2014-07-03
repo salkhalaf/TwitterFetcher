@@ -89,6 +89,7 @@ public class TwitterFetcher {
 		System.out.println("The tweet with most famouse author is \""+tweetByMostFollowers.getText() + "\" the auther was " 
 				+ tweetByMostFollowers.getRetweetedStatus().getUser().getScreenName() + " and s/he has " + tweetByMostFollowers.getRetweetedStatus().getUser().getFollowersCount() + " followers.");
 
+		//all done with the data, deleting the collection....
 		tweetsCollection.drop();
 
 
